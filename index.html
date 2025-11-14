@@ -1910,6 +1910,17 @@
             opacity: 0;
             transform: scale(0.9);
         }
+
+        /* スマホ専用改行 */
+        .sp-br {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .sp-br {
+                display: block;
+            }
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -2017,12 +2028,10 @@
     <div class="container">
         <!-- FVセクション -->
         <div class="fv-section">
-            <div class="ai-badge">AI業界初</div>
             <h1 class="main-catch">AIが創る<br>あなた史上最高の<br>プロフィール写真</h1>
             <p class="sub-catch">手持ち写真をアップするだけ。<br>たった5分でプロ撮影並みの印象力を手に入れよう。</p>
 
-
-            <button class="cta-button">今すぐ始める</button>
+            <p class="intro-text" style="margin: 60px auto 40px; max-width: 600px;">マッチングアプリで、<br>スクロールされるあなたと、選ばれる誰か。<br>違いは、たった1枚の"写真"かもしれません。</p>
 
             <!-- SP用四角形（高さ3：幅2） -->
             <div class="mobile-squares">
@@ -2030,7 +2039,7 @@
                     <div class="square-container">
                         <div class="square-label">Before</div>
                         <div class="square-placeholder">
-                            <img src="img/Before.PNG" alt="Before">
+                            <img src="img/before1.jpg" alt="Before">
                         </div>
                         <div class="square-description">目に留まりにくい写真</div>
                     </div>
@@ -2045,6 +2054,8 @@
                     </div>
                 </div>
             </div>
+
+            <button class="cta-button">今すぐ始める</button>
         </div>
 
         <!-- お悩み訴求セクション -->
@@ -2068,11 +2079,6 @@
                     自撮りだと不自然で<br>友達もいないように見える
                 </li>
             </ul>
-        </div>
-
-        <!-- 導入セクション -->
-        <div class="section intro-section">
-            <p class="intro-text">スクロールされるあなたと、選ばれる誰か。<br>違いは、たった1枚の"写真"かもしれません。</p>
         </div>
 
         <!-- サービス紹介セクション -->
@@ -2178,7 +2184,6 @@
                     <div class="plan-subtitle">顔写真のみの生成プラン</div>
                     <div class="plan-price">980円</div>
                     <ul class="plan-features-new">
-                        <li><span class="checkmark">✓</span> 必要写真：正面8枚＋斜め4枚</li>
                         <li><span class="checkmark">✓</span> 最大1回の再生成</li>
                         <li><span class="close">✕</span> スタイル指定</li>
                         <li><span class="checkmark">✓</span> 顔画像5枚×2=10枚</li>
@@ -2192,7 +2197,6 @@
                     <div class="plan-subtitle">全身写真のみの生成プラン</div>
                     <div class="plan-price">980円</div>
                     <ul class="plan-features-new">
-                        <li><span class="checkmark">✓</span> 必要写真：正面8枚＋斜め4枚</li>
                         <li><span class="checkmark">✓</span> 最大1回の再生成</li>
                         <li><span class="close">✕</span> スタイル指定</li>
                         <li><span class="close">✕</span> 顔画像</li>
@@ -2207,7 +2211,6 @@
                     <div class="plan-subtitle">顔写真と全身写真の両方を生成</div>
                     <div class="plan-price">1,800円</div>
                     <ul class="plan-features-new">
-                        <li><span class="checkmark">✓</span> 必要写真：正面8枚＋斜め4枚</li>
                         <li><span class="checkmark">✓</span> 最大2回の再生成</li>
                         <li><span class="close">✕</span> スタイル指定</li>
                         <li><span class="checkmark">✓</span> 顔画像5枚＋全身写真5枚×3=30枚</li>
@@ -2221,10 +2224,8 @@
                     <div class="plan-subtitle">スタイル指定可能な最上位プラン</div>
                     <div class="plan-price">2,980円</div>
                     <ul class="plan-features-new">
-                        <li><span class="checkmark">✓</span> 必要写真：正面8枚＋斜め4枚</li>
                         <li><span class="checkmark">✓</span> 最大3回の再生成</li>
                         <li><span class="checkmark">✓</span> 理想画像のアップロード</li>
-                        <li><span class="checkmark">✓</span> ギャラリー選択（アクセサリー・季節・服ジャンル・場所）</li>
                         <li><span class="checkmark">✓</span> 顔画像5枚＋全身写真5枚×4=40枚</li>
                     </ul>
                     <button class="plan-select-button">このプランを選択</button>
