@@ -543,6 +543,30 @@
             letter-spacing: 0.5px;
             max-width: 500px;
             margin: 0 auto;
+            position: relative;
+            padding: 30px 0;
+        }
+
+        .intro-text::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #BFA978 20%, #BFA978 80%, transparent 100%);
+        }
+
+        .intro-text::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #BFA978 20%, #BFA978 80%, transparent 100%);
         }
 
         /* サービス紹介セクション */
@@ -1030,6 +1054,22 @@
             font-size: 13px;
             color: #999;
             line-height: 1.8;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #BFA978;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #D4C29A;
+            text-decoration: underline;
         }
 
         /* アニメーション */
@@ -2262,6 +2302,9 @@
 
         <!-- フッター -->
         <div class="footer">
+            <div class="footer-links">
+                <a href="tokushoho.html">特定商取引法に基づく表記</a>
+            </div>
             <p>© 2025 AI Photo. All rights reserved.</p>
         </div>
     </div>
